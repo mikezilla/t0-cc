@@ -63,7 +63,7 @@ async function sendAccountOwnerEmail(val) {
             log.info(`Email sent successfully for account: ${accountId}`);
             return;
         }
-        log.error(`There was a problem when attempting to send email for account: ${accountId}`);
+        log.warn(`There was a problem when attempting to send email for account: ${accountId}`);
     }
 }
 
