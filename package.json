@@ -1,0 +1,12 @@
+{
+  "name": "t0",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "qs": "^6.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
