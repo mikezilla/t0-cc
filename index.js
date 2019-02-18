@@ -52,7 +52,7 @@ async function sendAccountOwnerEmail(val) {
     const parsedQueryString = qs.parse(val.split('?')[1]);
     const accountId = parsedQueryString.accountId;
 
-    log.info(`Attempting to send email for account: ${accountId}`)
+    log.info(`Attempting to send email for account: ${accountId}`);
 
     const accountInfo = await getAccountInfo(parsedQueryString.accountsEndpoint, accountId);
     const userInfoList = await getUserInfo(parsedQueryString.usersEndpoint, accountInfo.users);
@@ -74,7 +74,7 @@ async function getAccountInfo(endpoint, accountId) {
 async function getUserInfo(endpoint, users) {
     const userInfoPromises = users.map((user) => {
         return doGetRequest(`${endpoint}/${user}`);
-    })
+    });
     return Promise.all(userInfoPromises).then((values) => {
         return values;
     });
