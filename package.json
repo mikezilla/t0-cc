@@ -5,7 +5,7 @@
   "scripts": {},
   "dependencies": {
     "bunyan": "^1.8.12",
-    "qs": "^6.6.0",
+    "qs": "^6.6.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }
